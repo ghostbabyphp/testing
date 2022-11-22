@@ -1,0 +1,22 @@
+{
+  "name": "dhis2-tools",
+  "version": "1.0.0",
+  "description": "",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build": "d2-app-scripts build",
+    "start": "d2-app-scripts start & node proxy.js",
+    "test": "d2-app-scripts test",
+    "deploy": "d2-app-scripts deploy"
+  },
+  "devDependencies": {
+    "@dhis2/cli-app-scripts": "^10.1.5"
+  },
+  "dependencies": {
+    "@dhis2/app-runtime": "^3.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  }
+}
